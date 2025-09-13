@@ -1,0 +1,238 @@
+.education-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f9fafb, #f1f5f9);
+  scroll-margin-top: 80px;
+}
+
+.about-title-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d4ed8;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.about-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #38bdf8, #3b82f6);
+  border-radius: 2px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #d1d5db;
+  transform: translateX(-50%);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #1d4ed8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e0e7ff;
+  z-index: 2;
+}
+
+.timeline-block {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.timeline-block.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-block.right {
+  left: 50%;
+  text-align: left;
+}
+
+.edu-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.edu-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.edu-info h3 {
+  margin: 4px 0;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.edu-info h4 {
+  font-size: 16px;
+  margin: 2px 0;
+  color: #475569;
+}
+
+.edu-info h5 {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #64748b;
+}
+
+.edu-info h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+  color: #334155;
+}
+
+.edu-info span {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.achievements-container,
+.certifications-container {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.ach-card,
+.cert-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ach-card:hover,
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ach-card h4,
+.cert-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.ach-card p,
+.cert-card p {
+  font-size: 15px;
+  color: #334155;
+  margin: 0 0 6px;
+}
+
+.cert-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.cert-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 1024px) {
+  .timeline-block {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+  .timeline-line {
+    left: 20px;
+  }
+  .timeline-dot {
+    left: 20px;
+    transform: none;
+  }
+  .edu-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .edu-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 24px;
+  }
+  .edu-info h3 {
+    font-size: 18px;
+  }
+  .edu-info h4,
+  .edu-info h5,
+  .edu-info h2 {
+    font-size: 14px;
+  }
+  .timeline-block {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-title {
+    font-size: 20px;
+  }
+  .cert-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

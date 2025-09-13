@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Libertinus Mono", "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

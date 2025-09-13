@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Libertinus Mono", "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 2rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  margin-top: auto;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1rem 0.6rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding: 1.3rem 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  main {
+    padding: 2.5rem;
+  }
+
+  footer {
+    padding: 1.5rem 2rem;
+  }
+}

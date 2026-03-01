@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Libertinus Mono", "Poppins", sans-serif;
+  font-family: "Libertinus Mono", monospace;
   background-color: #f0f0f0;
   color: #0f172a;
   min-height: 100vh;
@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-main {
+main-content {
   flex: 1;
   width: 100%;
   overflow-x: hidden;

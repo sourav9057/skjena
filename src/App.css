@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
 
 
 * {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Caladea", Georgia, serif;
+  font-family: "Libertinus Mono", monospace;
   background-color: #f0f0f0;
   color: #0f172a;
   min-height: 100vh;

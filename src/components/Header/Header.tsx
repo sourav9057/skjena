@@ -3,9 +3,9 @@ import "./Header.css";
 import HeaderImage from "../../assets/header_image/header_img.jpeg";
 
 // Resumes
-import softwareCV from "../../assets/resumes/softwareProfile.pdf";
-import dataCV from "../../assets/resumes/dataProfile.pdf";
-import cyberCV from "../../assets/resumes/cyberProfile.pdf";
+// import softwareCV from "../../assets/resumes/softwareProfile.pdf";
+// import dataCV from "../../assets/resumes/dataProfile.pdf";
+// import cyberCV from "../../assets/resumes/cyberProfile.pdf";
 
 // Animated roles
 const roles = [
@@ -61,7 +61,7 @@ const Header = () => {
                         <a href="#contact" className="btn contact-btn">
                             Contact Me
                         </a>
-                        <div className="cv-buttons">
+                        {/* <div className="cv-buttons">
                             <a href={softwareCV} target="_blank" className="btn gradient-btn">
                                 Software Profile CV
                             </a>
@@ -71,7 +71,7 @@ const Header = () => {
                             <a href={cyberCV} target="_blank" className="btn gradient-btn">
                                 Cyber Profile CV
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

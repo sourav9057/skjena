@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -14,11 +14,16 @@ body {
 }
 
 body {
-  font-family: "Libertinus Mono", "Poppins", sans-serif;
+  font-family: "Caladea", Georgia, serif;
   background-color: #f0f0f0;
   color: #333333;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 a {
